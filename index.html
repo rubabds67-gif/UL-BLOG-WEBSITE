@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University of Layyah Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">UL <span>Blog</span></div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#blogs">Blogs</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="welcome">WELCOME TO OUR UNIVERSITY BLOG</p>
+            <h1>University of Layyah</h1>
+            <h2>Learn, Explore and Grow Together</h2>
+            <p>
+                Discover university news, student activities,
+                educational information and campus life.
+            </p>
+            <a href="#blogs" class="btn">Explore Blogs</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Our Blog</h2>
+        <p>
+            This blog shares educational information, university
+            activities and useful updates for students.
+            It helps students stay informed and connected.
+        </p>
+    </section>
+
+    <section class="blogs" id="blogs">
+        <h2>Latest Blog Posts</h2>
+        <p class="section-text">Explore our latest articles and updates.</p>
+
+        <input type="text" id="searchInput"
+               placeholder="Search blog posts...">
+
+        <div class="blog-container" id="blogContainer">
+
+            <article class="blog-card">
+                <div class="blog-image image-one">🎓</div>
+                <div class="blog-info">
+                    <span class="category">Education</span>
+                    <h3>Importance of Education</h3>
+                    <p>
+                        Education helps students gain knowledge,
+                        develop skills and build a better future.
+                    </p>
+                    <button class="read-btn"
+                        data-title="Importance of Education"
+                        data-text="Education gives students knowledge, confidence and useful skills. It helps them solve problems, explore new ideas and prepare for their future careers.">
+                        Read More
+                    </button>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-image image-two">📚</div>
+                <div class="blog-info">
+                    <span class="category">Student Life</span>
+                    <h3>Tips for University Students</h3>
+                    <p>
+                        Good planning, regular study and teamwork
+                        can make university life better.
+                    </p>
+                    <button class="read-btn"
+                        data-title="Tips for University Students"
+                        data-text="Make a daily study timetable, attend classes regularly, complete assignments on time and work with classmates. These habits can improve learning and confidence.">
+                        Read More
+                    </button>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-image image-three">💻</div>
+                <div class="blog-info">
+                    <span class="category">Technology</span>
+                    <h3>Role of Technology in Education</h3>
+                    <p>
+                        Digital tools help students learn new
+                        concepts and explore information easily.
+                    </p>
+                    <button class="read-btn"
+                        data-title="Technology in Education"
+                        data-text="Technology supports online learning, research and communication. Students can use digital resources to understand concepts, practice skills and work on projects.">
+                        Read More
+                    </button>
+                </div>
+            </article>
+
+        </div>
+
+        <p id="noResults" hidden>No blog posts found.</p>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Have a question or suggestion? Send us a message.</p>
+
+        <form id="contactForm">
+            <input type="text" id="name"
+                   placeholder="Your Name" required>
+
+            <input type="email" id="email"
+                   placeholder="Your Email" required>
+
+            <textarea id="message"
+                      placeholder="Write your message..."
+                      required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+
+        <p id="formMessage"></p>
+    </section>
+
+    <footer>
+        <p>© 2026 University of Layyah Blog</p>
+        <p>Created for Web Technology Assignment</p>
+    </footer>
+
+    <div id="blogModal" class="modal" hidden>
+        <div class="modal-content">
+            <button id="closeModal" class="close-btn">×</button>
+            <h2 id="modalTitle"></h2>
+            <p id="modalText"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
